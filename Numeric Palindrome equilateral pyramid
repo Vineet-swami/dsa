@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner myObj = new Scanner(System.in);
+		int n = myObj.nextInt();
+		for(int i = 1; i <= n ; i++){
+		    int a = 0;
+		    for(int j = 1; j < n+i;j++){
+		        if(j<n-i+1){
+		            System.out.print(" ");
+		        }
+		        else if(j<=n){
+		            a++;
+		            System.out.print(a);
+		        }
+		        else{
+		            --a;
+		            System.out.print(a);
+		        }
+		    }
+		    System.out.println();
+		}
+	}
+}
+//JAVA
